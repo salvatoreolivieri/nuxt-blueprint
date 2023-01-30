@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Section and Layout
+@import "./_partials/wrapper";
+
+// Font and Typography
+@import "./_partials/font";
+@import "./_partials/typography";
+
+// Utility Component
+@import "./_partials/buttons";
+
+// Others Stuff
+@import "./_partials/utils";
