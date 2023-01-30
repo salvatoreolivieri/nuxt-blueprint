@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.2.0",
-    "@nuxtjs/tailwindcss": "^6.2.0"
+    "@nuxtjs/tailwindcss": "^6.2.0",
+    "postcss-custom-properties": "^13.1.1"
   }
 }
