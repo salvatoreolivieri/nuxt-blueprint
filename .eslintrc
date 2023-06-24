@@ -1,0 +1,27 @@
+{
+  "plugins": ["prettier", "tailwindcss"],
+  "extends": [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:tailwindcss/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": ["off"]
+  },
+  "overrides": [
+    {
+      "files": ["*.js", "*.ts"],
+      "processor": "@graphql-eslint/graphql",
+      "extends": ["plugin:prettier/recommended"]
+    },
+    {
+      "files": ["*.graphql", "*.js", "*.ts"],
+      "parser": "@graphql-eslint/eslint-plugin",
+      "plugins": ["@graphql-eslint"],
+      "rules": {
+        "@graphql-eslint/known-type-names": "ignore",
+        "tailwindcss/no-custom-classname": "ignore"
+      }
+    }
+  ]
+}
