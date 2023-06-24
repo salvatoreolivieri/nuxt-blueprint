@@ -21,16 +21,20 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
+
   css: ["@/assets/style/app.scss"],
+
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "nuxt-icon",
     "@nuxtjs/i18n",
   ],
+
   colorMode: {
     classSuffix: "",
   },
+
   tailwindcss: {
     cssPath: "~/assets/style/app.scss",
     configPath: "tailwind.config.js",

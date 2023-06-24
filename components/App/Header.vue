@@ -3,6 +3,8 @@
 <template>
   <header>
     {{ $t("app.header") }}
+
+    <AtomsButton />
   </header>
 </template>
 
