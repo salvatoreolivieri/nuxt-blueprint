@@ -29,6 +29,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "nuxt-icon",
     "@nuxtjs/i18n",
+    "nuxt-headlessui",
   ],
 
   colorMode: {
