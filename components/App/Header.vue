@@ -2,8 +2,7 @@
 
 <template>
   <header>
-    headr
-    <Icon name="uil:github" color="black"  />
+    {{ $t("app.header") }}
   </header>
 </template>
 

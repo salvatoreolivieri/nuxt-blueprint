@@ -1,7 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <footer>footer</footer>
+  <footer>
+    {{ $t("app.footer") }}
+  </footer>
 </template>
 
 <style scoped lang="scss"></style>

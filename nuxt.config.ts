@@ -1,3 +1,5 @@
+import itLocale from "./locales/it.json"
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
@@ -20,7 +22,12 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/style/app.scss"],
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", 'nuxt-icon'],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/color-mode",
+    "nuxt-icon",
+    "@nuxtjs/i18n",
+  ],
   colorMode: {
     classSuffix: "",
   },
@@ -31,5 +38,16 @@ export default defineNuxtConfig({
 
     injectPosition: 0,
     viewer: true,
+  },
+
+  i18n: {
+    // add `vueI18n` option to `@nuxtjs/i18n` module options
+    vueI18n: {
+      legacy: false,
+      locale: "it",
+      messages: {
+        it: itLocale,
+      },
+    },
   },
 })
