@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "nuxt": "3.5.0",
+    "nuxt-icon": "^0.4.1",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0"
   },
