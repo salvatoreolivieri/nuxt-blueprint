@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     head: {
       title: "Nuxt Blueprint",
       htmlAttrs: {
-        lang: "en",
+        lang: "it",
       },
       meta: [
         { charset: "utf-8" },
@@ -27,6 +27,31 @@ export default defineNuxtConfig({
     },
   },
 
+  pwa: {
+    meta: {
+      title: "Nuxt Blueprint",
+      author: "Salvatore Olivieri",
+    },
+    manifest: {
+      name: "Nuxt Blueprint",
+      short_name: "Nuxt Blueprint",
+      description: "description",
+      lang: "it",
+    },
+    icon: {
+      fileName: "favicon.ico",
+      sizes: [64, 120, 144, 152, 192, 384, 512],
+      splash: {
+        backgroundColor: "#ffffff",
+        targetDir: "/",
+        devices: [],
+      },
+    },
+    workbox: {
+      enabled: true,
+    },
+  },
+
   modules: [
     "@nuxt/devtools", // https://nuxt.com/modules/devtools
     "@nuxtjs/tailwindcss", // https://nuxt.com/modules/tailwindcss
@@ -39,6 +64,7 @@ export default defineNuxtConfig({
     "nuxt-delay-hydration", // https://dev.to/jacobandrewsky/improving-performance-of-nuxt-with-delayed-hydration-4cif
     "nuxt-icon", // https://nuxt.com/modules/icon
     "nuxt-headlessui", // https://nuxt.com/modules/headlessui
+    "@kevinmarrec/nuxt-pwa",
   ],
 
   /* 
