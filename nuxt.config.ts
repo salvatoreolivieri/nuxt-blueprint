@@ -31,8 +31,8 @@ export default defineNuxtConfig({
     "@nuxtjs/algolia", // https://nuxt.com/modules/algolia
     "@nuxtjs/partytown", // https://nuxt.com/modules/partytown
     "@nuxtjs/fontaine", // https://nuxt.com/modules/fontaine
-    "nuxt-delay-hydration", // https://dev.to/jacobandrewsky/improving-performance-of-nuxt-with-delayed-hydration-4cif
     "@nuxtjs/critters", // https://dev.to/jacobandrewsky/optimizing-css-performance-in-nuxt-with-critters-4k8i
+    "nuxt-delay-hydration", // https://dev.to/jacobandrewsky/improving-performance-of-nuxt-with-delayed-hydration-4cif
     "nuxt-icon", // https://nuxt.com/modules/icon
     "nuxt-headlessui", // https://nuxt.com/modules/headlessui
   ],
