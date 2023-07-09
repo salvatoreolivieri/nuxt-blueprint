@@ -33,6 +33,8 @@ export default defineNuxtConfig({
     "nuxt-headlessui",
     "@nuxtjs/algolia",
     "@nuxtjs/partytown",
+    // https://nuxt.com/modules/fontaine
+    "@nuxtjs/fontaine",
   ],
 
   colorMode: {
