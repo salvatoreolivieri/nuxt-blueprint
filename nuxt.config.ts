@@ -98,6 +98,7 @@ export default defineNuxtConfig({
     vueI18n: {
       legacy: false,
       locale: "it",
+      fallbackLocale: "it",
       messages: {
         it: itLocale,
         en: enLocale,

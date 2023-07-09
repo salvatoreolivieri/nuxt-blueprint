@@ -13,6 +13,9 @@ const { $hello } = useNuxtApp()
     <p>
       {{ $hello("custom message") }}
     </p>
+
+    <!-- I18n -->
+    <AtomsLocale />
   </div>
 </template>
 
