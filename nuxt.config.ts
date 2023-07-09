@@ -48,7 +48,7 @@ export default defineNuxtConfig({
       },
     },
     workbox: {
-      enabled: true,
+      enabled: false,
     },
   },
 
@@ -117,13 +117,5 @@ export default defineNuxtConfig({
     mode: "init",
     // enables nuxt-delay-hydration in dev mode for testing
     debug: process.env.NODE_ENV === "development",
-  },
-
-  critters: {
-    // Options passed directly to critters: https://github.com/GoogleChromeLabs/critters#critters-2
-    config: {
-      // Default: 'media'
-      preload: "swap",
-    },
   },
 })
