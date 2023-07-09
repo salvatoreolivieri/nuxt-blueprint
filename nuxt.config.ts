@@ -1,4 +1,5 @@
 import itLocale from "./locales/it.json"
+import enLocale from "./locales/en.json"
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -30,7 +31,7 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "@nuxtjs/i18n",
     "nuxt-headlessui",
-    '@nuxtjs/algolia'
+    "@nuxtjs/algolia",
   ],
 
   colorMode: {
@@ -53,6 +54,7 @@ export default defineNuxtConfig({
       locale: "it",
       messages: {
         it: itLocale,
+        en: enLocale,
       },
     },
   },
