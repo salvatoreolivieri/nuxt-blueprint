@@ -24,24 +24,19 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/color-mode",
-    "@nuxtjs/i18n",
-    "@nuxtjs/algolia",
-    "@nuxtjs/partytown",
-    // https://nuxt.com/modules/fontaine
-    "@nuxtjs/fontaine",
-    // https://github.com/harlan-zw/nuxt-delay-hydration
-    "nuxt-delay-hydration",
-    "nuxt-icon",
-    "nuxt-headlessui",
+    "@nuxtjs/tailwindcss", // https://nuxt.com/modules/tailwindcss
+    "@nuxtjs/color-mode", // https://nuxt.com/modules/color-mode
+    "@nuxtjs/i18n", // https://nuxt.com/modules/i18n
+    "@nuxtjs/algolia", // https://nuxt.com/modules/algolia
+    "@nuxtjs/partytown", // https://nuxt.com/modules/partytown
+    "@nuxtjs/fontaine", // https://nuxt.com/modules/fontaine
+    "nuxt-delay-hydration", // https://dev.to/jacobandrewsky/improving-performance-of-nuxt-with-delayed-hydration-4cif
+    "@nuxtjs/critters", // https://dev.to/jacobandrewsky/optimizing-css-performance-in-nuxt-with-critters-4k8i
+    "nuxt-icon", // https://nuxt.com/modules/icon
+    "nuxt-headlessui", // https://nuxt.com/modules/headlessui
   ],
 
-  /* CSS and Dark Mode */
-
-  colorMode: {
-    classSuffix: "",
-  },
+  /* CSS */
 
   css: ["@/assets/style/app.scss"],
 
@@ -55,6 +50,10 @@ export default defineNuxtConfig({
   },
 
   /* Utils */
+
+  colorMode: {
+    classSuffix: "",
+  },
 
   i18n: {
     // add `vueI18n` option to `@nuxtjs/i18n` module options
@@ -78,5 +77,13 @@ export default defineNuxtConfig({
     mode: "init",
     // enables nuxt-delay-hydration in dev mode for testing
     debug: process.env.NODE_ENV === "development",
+  },
+
+  critters: {
+    // Options passed directly to critters: https://github.com/GoogleChromeLabs/critters#critters-2
+    config: {
+      // Default: 'media'
+      preload: "swap",
+    },
   },
 })
