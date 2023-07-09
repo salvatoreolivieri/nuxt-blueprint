@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "nuxt": "3.6.2",
+    "nuxt-delay-hydration": "^1.2.1",
     "nuxt-icon": "^0.4.1",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0"

@@ -23,23 +23,27 @@ export default defineNuxtConfig({
     },
   },
 
-  css: ["@/assets/style/app.scss"],
-
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
-    "nuxt-icon",
     "@nuxtjs/i18n",
-    "nuxt-headlessui",
     "@nuxtjs/algolia",
     "@nuxtjs/partytown",
     // https://nuxt.com/modules/fontaine
     "@nuxtjs/fontaine",
+    // https://github.com/harlan-zw/nuxt-delay-hydration
+    "nuxt-delay-hydration",
+    "nuxt-icon",
+    "nuxt-headlessui",
   ],
+
+  /* CSS and Dark Mode */
 
   colorMode: {
     classSuffix: "",
   },
+
+  css: ["@/assets/style/app.scss"],
 
   tailwindcss: {
     cssPath: "~/assets/style/app.scss",
@@ -49,6 +53,8 @@ export default defineNuxtConfig({
     injectPosition: 0,
     viewer: true,
   },
+
+  /* Utils */
 
   i18n: {
     // add `vueI18n` option to `@nuxtjs/i18n` module options
@@ -62,7 +68,15 @@ export default defineNuxtConfig({
     },
   },
 
+  /* Performance */
+
   partytown: {
     debug: false,
+  },
+
+  delayHydration: {
+    mode: "init",
+    // enables nuxt-delay-hydration in dev mode for testing
+    debug: process.env.NODE_ENV === "development",
   },
 })
