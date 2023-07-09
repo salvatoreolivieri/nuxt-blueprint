@@ -34,6 +34,7 @@ export default defineNuxtConfig({
     "@nuxtjs/critters", // https://dev.to/jacobandrewsky/optimizing-css-performance-in-nuxt-with-critters-4k8i
     "nuxt-icon", // https://nuxt.com/modules/icon
     "nuxt-headlessui", // https://nuxt.com/modules/headlessui
+    "@nuxt/devtools",
   ],
 
   /* CSS */
@@ -50,6 +51,10 @@ export default defineNuxtConfig({
   },
 
   /* Utils */
+
+  devtools: {
+    enabled: true,
+  },
 
   colorMode: {
     classSuffix: "",
