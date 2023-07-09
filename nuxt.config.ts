@@ -24,6 +24,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    "@nuxt/devtools", //https://nuxt.com/modules/devtools
     "@nuxtjs/tailwindcss", // https://nuxt.com/modules/tailwindcss
     "@nuxtjs/color-mode", // https://nuxt.com/modules/color-mode
     "@nuxtjs/i18n", // https://nuxt.com/modules/i18n
@@ -34,10 +35,11 @@ export default defineNuxtConfig({
     "@nuxtjs/critters", // https://dev.to/jacobandrewsky/optimizing-css-performance-in-nuxt-with-critters-4k8i
     "nuxt-icon", // https://nuxt.com/modules/icon
     "nuxt-headlessui", // https://nuxt.com/modules/headlessui
-    "@nuxt/devtools",
   ],
 
-  /* CSS */
+  /* 
+    Style:
+  */
 
   css: ["@/assets/style/app.scss"],
 
@@ -50,7 +52,9 @@ export default defineNuxtConfig({
     viewer: true,
   },
 
-  /* Utils */
+  /* 
+    Utils:
+  */
 
   devtools: {
     enabled: true,
@@ -61,7 +65,6 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    // add `vueI18n` option to `@nuxtjs/i18n` module options
     vueI18n: {
       legacy: false,
       locale: "it",
@@ -72,7 +75,9 @@ export default defineNuxtConfig({
     },
   },
 
-  /* Performance */
+  /*
+    Performance:
+  */
 
   partytown: {
     debug: false,
