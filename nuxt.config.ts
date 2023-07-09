@@ -32,6 +32,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "nuxt-headlessui",
     "@nuxtjs/algolia",
+    "@nuxtjs/partytown",
   ],
 
   colorMode: {
@@ -57,5 +58,9 @@ export default defineNuxtConfig({
         en: enLocale,
       },
     },
+  },
+
+  partytown: {
+    debug: false,
   },
 })
