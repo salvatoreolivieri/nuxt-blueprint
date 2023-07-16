@@ -65,6 +65,7 @@ export default defineNuxtConfig({
     "nuxt-icon", // https://nuxt.com/modules/icon
     "nuxt-headlessui", // https://nuxt.com/modules/headlessui
     "@kevinmarrec/nuxt-pwa",
+    "@vueuse/nuxt", // https://vueuse.org/
   ],
 
   /* 
