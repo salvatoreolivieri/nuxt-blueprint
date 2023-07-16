@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { useMouse } from "@vueuse/core"
+
+const { x, y } = useMouse()
 const { $hello } = useNuxtApp()
 </script>
 
@@ -16,6 +19,9 @@ const { $hello } = useNuxtApp()
 
     <!-- I18n -->
     <AtomsLocale />
+
+    <!-- VueUse -->
+    <p>{{ x }} {{ y }}</p>
   </div>
 </template>
 

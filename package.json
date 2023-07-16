@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@kevinmarrec/nuxt-pwa": "^0.17.0",
-    "nuxt": "3.6.2",
+    "nuxt": "3.6.3",
     "nuxt-delay-hydration": "^1.2.1",
     "nuxt-icon": "^0.4.2",
     "sass": "^1.63.6",
