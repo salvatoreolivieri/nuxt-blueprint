@@ -54,6 +54,7 @@ export default defineNuxtConfig({
 
   modules: [
     "@nuxt/devtools", // https://nuxt.com/modules/devtools
+    "@nuxt/image-edge", // https://nuxt.com/modules/image
     "@nuxtjs/tailwindcss", // https://nuxt.com/modules/tailwindcss
     "@nuxtjs/color-mode", // https://nuxt.com/modules/color-mode
     "@nuxtjs/i18n", // https://nuxt.com/modules/i18n

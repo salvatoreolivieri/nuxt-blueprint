@@ -22,6 +22,9 @@ const { $hello } = useNuxtApp()
 
     <!-- VueUse -->
     <p>{{ x }} {{ y }}</p>
+
+    <!-- Nuxt image -->
+    <NuxtImg src="./images/salvatore-olivieri.jpg" />
   </div>
 </template>
 
