@@ -58,7 +58,6 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss", // https://nuxt.com/modules/tailwindcss
     "@nuxtjs/color-mode", // https://nuxt.com/modules/color-mode
     "@nuxtjs/i18n", // https://nuxt.com/modules/i18n
-    "@nuxtjs/supabase", // https://supabase.nuxtjs.org/
     "@nuxtjs/algolia", // https://nuxt.com/modules/algolia
     "@nuxtjs/partytown", // https://nuxt.com/modules/partytown
     "@nuxtjs/fontaine", // https://nuxt.com/modules/fontaine
