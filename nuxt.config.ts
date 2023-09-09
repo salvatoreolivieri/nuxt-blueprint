@@ -58,13 +58,14 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss", // https://nuxt.com/modules/tailwindcss
     "@nuxtjs/color-mode", // https://nuxt.com/modules/color-mode
     "@nuxtjs/i18n", // https://nuxt.com/modules/i18n
+    "@nuxtjs/algolia", // https://nuxt.com/modules/algolia
     "@nuxtjs/partytown", // https://nuxt.com/modules/partytown
     "@nuxtjs/fontaine", // https://nuxt.com/modules/fontaine
-    // "@nuxtjs/critters", https://dev.to/jacobandrewsky/optimizing-css-performance-in-nuxt-with-critters-4k8i
-    // "nuxt-delay-hydration", https://dev.to/jacobandrewsky/improving-performance-of-nuxt-with-delayed-hydration-4cif
+    "@nuxtjs/critters", // https://dev.to/jacobandrewsky/optimizing-css-performance-in-nuxt-with-critters-4k8i
+    "nuxt-delay-hydration", // https://dev.to/jacobandrewsky/improving-performance-of-nuxt-with-delayed-hydration-4cif
     "nuxt-icon", // https://nuxt.com/modules/icon
     "nuxt-headlessui", // https://nuxt.com/modules/headlessui
-    // "@kevinmarrec/nuxt-pwa",
+    "@kevinmarrec/nuxt-pwa",
   ],
 
   /* 
