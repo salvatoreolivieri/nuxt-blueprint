@@ -7,4 +7,15 @@ export default defineAppConfig({
       nuxt: "logos:nuxt-icon",
     },
   },
+
+  ui: {
+    global: true,
+    notifications: {
+      // Show toasts at the bottom right of the screen
+      position: "bottom-0",
+      default: {
+        timeout: 2000,
+      },
+    },
+  },
 })

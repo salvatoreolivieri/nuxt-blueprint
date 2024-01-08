@@ -3,13 +3,11 @@ import enLocale from "./locales/en.json"
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  /* 
-    Enginering:
-  */
+  devtools: { enabled: true },
 
   app: {
     head: {
-      title: "Nuxt Blueprint",
+      title: "QR Code Project",
       htmlAttrs: {
         lang: "it",
       },
@@ -17,9 +15,14 @@ export default defineNuxtConfig({
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
+          hid: "robots",
+          name: "robots",
+          content: "all",
+        },
+        {
           hid: "description",
           name: "description",
-          content: "This is my first Nuxt App",
+          content: "Description",
         },
         { name: "format-detection", content: "telephone=no" },
       ],
@@ -27,45 +30,12 @@ export default defineNuxtConfig({
     },
   },
 
-  pwa: {
-    meta: {
-      title: "Nuxt Blueprint",
-      author: "Salvatore Olivieri",
-    },
-    manifest: {
-      name: "Nuxt Blueprint",
-      short_name: "Nuxt Blueprint",
-      description: "description",
-      lang: "it",
-    },
-    icon: {
-      fileName: "favicon.ico",
-      sizes: [64, 120, 144, 152, 192, 384, 512],
-      splash: {
-        backgroundColor: "#ffffff",
-        targetDir: "/",
-        devices: [],
-      },
-    },
-    workbox: {
-      enabled: false,
-    },
-  },
-
   modules: [
-    "@nuxt/devtools", // https://nuxt.com/modules/devtools
-    "@nuxt/image-edge", // https://nuxt.com/modules/image
-    "@nuxtjs/tailwindcss", // https://nuxt.com/modules/tailwindcss
-    "@nuxtjs/color-mode", // https://nuxt.com/modules/color-mode
-    "@nuxtjs/i18n", // https://nuxt.com/modules/i18n
-    "@nuxtjs/algolia", // https://nuxt.com/modules/algolia
-    "@nuxtjs/partytown", // https://nuxt.com/modules/partytown
-    "@nuxtjs/fontaine", // https://nuxt.com/modules/fontaine
-    "@nuxtjs/critters", // https://dev.to/jacobandrewsky/optimizing-css-performance-in-nuxt-with-critters-4k8i
-    "nuxt-delay-hydration", // https://dev.to/jacobandrewsky/improving-performance-of-nuxt-with-delayed-hydration-4cif
-    "nuxt-icon", // https://nuxt.com/modules/icon
-    "nuxt-headlessui", // https://nuxt.com/modules/headlessui
-    "@kevinmarrec/nuxt-pwa",
+    "@nuxtjs/i18n",
+    "nuxt-icon",
+    "@nuxt/ui",
+    "@nuxt/image",
+    "@pinia/nuxt",
   ],
 
   /* 
@@ -87,10 +57,6 @@ export default defineNuxtConfig({
     Utils:
   */
 
-  devtools: {
-    enabled: true,
-  },
-
   colorMode: {
     classSuffix: "",
   },
@@ -105,19 +71,5 @@ export default defineNuxtConfig({
         en: enLocale,
       },
     },
-  },
-
-  /*
-    Performance:
-  */
-
-  partytown: {
-    debug: false,
-  },
-
-  delayHydration: {
-    mode: "init",
-    // enables nuxt-delay-hydration in dev mode for testing
-    debug: process.env.NODE_ENV === "development",
   },
 })

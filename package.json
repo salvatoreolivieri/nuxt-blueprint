@@ -1,5 +1,7 @@
 {
+  "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -8,26 +10,22 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@kevinmarrec/nuxt-pwa": "^0.17.0",
-    "@nuxt/image-edge": "^1.0.0-rc.1-28143901.afe4120",
-    "nuxt": "3.6.5",
-    "nuxt-delay-hydration": "^1.2.1",
-    "nuxt-icon": "^0.4.2",
+    "nuxt": "^3.9.0",
+    "vue": "^3.4.5",
+    "vue-router": "^4.2.5",
+    "nuxt-icon": "^0.6.7",
     "sass": "^1.63.6",
     "sass-loader": "^13.3.2"
   },
   "dependencies": {
-    "@nuxt/devtools": "^0.7.0",
-    "@nuxtjs/algolia": "^1.8.0",
-    "@nuxtjs/color-mode": "^3.3.0",
-    "@nuxtjs/critters": "^0.5.0",
-    "@nuxtjs/fontaine": "^0.4.0",
+    "@nuxt/image": "latest",
+    "@nuxt/ui": "^2.11.1",
     "@nuxtjs/i18n": "8.0.0-beta.10",
-    "@nuxtjs/partytown": "^1.3.0",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "@pinia/nuxt": "^0.4.11",
-    "@vueuse/core": "^10.2.1",
-    "nuxt-headlessui": "^1.1.4",
-    "postcss-custom-properties": "^13.2.1"
+    "@pinia/nuxt": "^0.5.1",
+    "@vueuse/components": "^10.5.0",
+    "@vueuse/core": "^10.5.0",
+    "pinia": "^2.1.7",
+    "sanitize-html": "^2.11.0",
+    "snarkdown": "2.0.0"
   }
 }

@@ -2,9 +2,8 @@
 
 <template>
   <header>
+    <!-- I18n -->
     {{ $t("app.header") }}
-
-    <AtomsButton />
   </header>
 </template>
 
